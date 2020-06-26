@@ -1,0 +1,46 @@
+.nav {
+  background-color: #2b3e50;
+}
+
+.card {
+  float: left;
+  max-width: 530px;
+}
+.card-body {
+  padding: 2rem 2rem 1rem 2rem;
+  margin: 0.5rem;
+}
+
+.title {
+  white-space: nowrap;
+}
+.liner {
+  white-space: nowrap;
+}
+.beername {
+  white-space: pre-wrap;
+  height: 55px;
+}
+
+.nav {
+  display: block;
+}
+.wantit {
+  margin-left: -0.5rem;
+}
+.container {
+  position: relative;
+  width: 100%;
+
+  margin: 0 auto;
+}
+.sitename {
+  margin-top: -1rem;
+}
+.bre {
+  text-align: right;
+  padding-right: 1rem;
+}
+.hr {
+  margin: 0.5rem 0 0.5rem 0;
+}
