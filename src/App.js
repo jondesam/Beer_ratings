@@ -9,7 +9,7 @@ import './App.css'
 import { Beers } from './components/Beers'
 
 const client = new ApolloClient({
-  uri: 'http://144.217.90.245:8080/graphql',
+  uri: process.env.API_URL,
 })
 
 class App extends Component {
