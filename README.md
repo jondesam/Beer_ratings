@@ -8,10 +8,9 @@
 ```bash
 # Install dependencies (server & client)
 npm install
-cd client && npm install
 
-# Client (:3000)
-npm run
+# Run Client (:3000)
+npm run start
 
 # Build for production
 npm run build
