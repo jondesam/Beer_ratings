@@ -187,16 +187,10 @@ export const Beers = () => {
 
   return (
     <div className='container'>
-      <div className='cardy text-white  mb-3 sticky-top mt-3'>
+      <div className='cardy text-white   sticky-top '>
         <div className='nav'>
-          <div>
-            <h1 className='sitename display-4 filxed-top  ml-4 inline-block '>
-              Canada's<span className='title'> Top Beers </span>
-            </h1>
-          </div>
-
-          <div className='m-2 pb-2'>
-            <form className='form-inline mt-3 ml-4'>
+          <div className='ml-2 mr-2 pb-2'>
+            <form className='form-inline ml-4'>
               <button
                 className={
                   filteredBy === 'UNTAPPD'
@@ -211,7 +205,7 @@ export const Beers = () => {
                   window.scrollTo(0, 0)
                 }}
               >
-                By Untappd
+                Untappd
               </button>
               <button
                 className={
@@ -227,14 +221,17 @@ export const Beers = () => {
                   window.scrollTo(0, 0)
                 }}
               >
-                By Ratebeer{' '}
+                Ratebeer{' '}
               </button>
             </form>
 
-            <div className='avg sticky-top col-sm-4 mt-3 mb-3 ml-2'>
-              <h4 className='liner  '>Avg. Price : $ {avg.price}</h4>
-              <h4 className='liner '> Avg. Untappd : {avg.untappd} / 5</h4>
-              <h4 className='liner  '> Avg. Ratebeer : {avg.rateBeer} / 5</h4>
+            <div className='sticky-top col-sm-4 mt-3 ml-2'>
+              <h5 className='avg  '>Avg. Price : $ {avg.price}</h5>
+              {filteredBy === 'UNTAPPD' ? (
+                <h5 className='avg '> Avg. Rate : {avg.untappd} / 5</h5>
+              ) : filteredBy === 'RATE_BEER' ? (
+                <h5 className='avg  '> Avg. Rate : {avg.rateBeer} / 5</h5>
+              ) : null}
             </div>
           </div>
         </div>

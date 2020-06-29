@@ -1,6 +1,7 @@
 .nav {
-  background-color: #2b3e50;
+  background-color: white;
 }
+
 
 .card {
   float: left;
@@ -11,15 +12,14 @@
   margin: 0.5rem;
 }
 
-.title {
-  white-space: nowrap;
-}
 .liner {
-  white-space: nowrap;
+  white-space: pre-line;
 }
 .beername {
-  white-space: pre-wrap;
-  height: 55px;
+  white-space: pre-line;
+}
+.beer-style {
+  white-space: pre-line;
 }
 
 .nav {
@@ -34,13 +34,43 @@
 
   margin: 0 auto;
 }
-.sitename {
-  margin-top: -1rem;
-}
-.bre {
+
+.brewery {
   text-align: right;
-  padding-right: 1rem;
+}
+.btn {
+  margin-top: 1rem;
+}
+
+@media (max-width: 411px) {
+  .card {
+    max-width: 88vw;
+  }
+  .liner {
+    font-size: 5vw;
+  }
+  .beername {
+    font-size: 7vw;
+    white-space: pre-line;
+    margin-bottom: 1rem;
+  }
+  .brewery {
+    font-size: 5vw;
+  }
+}
+@media (min-width: 768px) {
+  .beername {
+    white-space: pre-wrap;
+    height: 30px;
+  }
+  .brewery {
+    margin-top: 1rem;
+  }
 }
 .hr {
   margin: 0.5rem 0 0.5rem 0;
+}
+.avg {
+  color: #333;
+  white-space: nowrap;
 }
