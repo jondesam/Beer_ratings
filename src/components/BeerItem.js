@@ -35,18 +35,19 @@ const BeerItem = (beer) => {
           if (arr.length === 2) {
             return (
               <h5 className='liner' key={rating.name}>
-                {rating.value} on {rating.name}
+                {rating.value} on{' '}
+                {rating.name.charAt(0).toUpperCase() + rating.name.slice(1)}
               </h5>
             )
           }
           if (arr.length === 1 && rating.name === 'RateBeer') {
             return (
               <div>
+                <h5 className='liner' key={index}>
+                  n/a on Untappd
+                </h5>
                 <h5 className='liner' key={rating.name}>
                   {rating.value} on {rating.name}
-                </h5>
-                <h5 className='liner' key={index}>
-                  n/a on untappd
                 </h5>
               </div>
             )
@@ -55,10 +56,11 @@ const BeerItem = (beer) => {
             return (
               <div>
                 <h5 className='liner' key={rating.name}>
-                  {rating.value} on {rating.name}
+                  {rating.value} on{' '}
+                  {rating.name.charAt(0).toUpperCase() + rating.name.slice(1)}
                 </h5>
                 <h5 className='liner' key={index}>
-                  n/a on untappd
+                  n/a on RateBeer
                 </h5>
               </div>
             )
